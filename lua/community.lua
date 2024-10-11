@@ -12,5 +12,6 @@ return {
   { import = "astrocommunity.terminal-integration.toggleterm-manager-nvim" },
   { import = "astrocommunity.keybinding.nvcheatsheet-nvim" },
   { import = "astrocommunity.utility.telescope-live-grep-args-nvim" },
+  { import = "astrocommunity.motion.harpoon" },
   -- import/override with your plugins folder
 }
