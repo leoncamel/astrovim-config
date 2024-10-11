@@ -13,5 +13,6 @@ return {
   { import = "astrocommunity.keybinding.nvcheatsheet-nvim" },
   { import = "astrocommunity.utility.telescope-live-grep-args-nvim" },
   { import = "astrocommunity.motion.harpoon" },
+  { import = "astrocommunity.diagnostics.trouble-nvim" },
   -- import/override with your plugins folder
 }
