@@ -9,6 +9,7 @@ return {
       "vim",
       "go",
       "python",
+      "helm",
     },
   },
 }

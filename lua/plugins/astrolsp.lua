@@ -22,6 +22,7 @@ return {
         allow_filetypes = { -- enable format on save for specified filetypes only
           "lua",
           "go",
+          "yaml",
         },
         ignore_filetypes = { -- disable format on save for specified filetypes
           -- "python",
