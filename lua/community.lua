@@ -13,6 +13,7 @@ return {
   { import = "astrocommunity.pack.java" },
   { import = "astrocommunity.pack.scala" },
   { import = "astrocommunity.pack.proto" },
+  { import = "astrocommunity.pack.mdx" },
 
   -- frontend tools
   { import = "astrocommunity.pack.html-css" },
