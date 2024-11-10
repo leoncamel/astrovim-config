@@ -27,6 +27,7 @@ return {
   { import = "astrocommunity.pack.just" },
   { import = "astrocommunity.pack.ansible" },
   { import = "astrocommunity.pack.nix" },
+  { import = "astrocommunity.pack.terraform" },
 
   { import = "astrocommunity.recipes.telescope-nvchad-theme" },
   { import = "astrocommunity.colorscheme.catppuccin" },
@@ -36,5 +37,6 @@ return {
   { import = "astrocommunity.utility.telescope-live-grep-args-nvim" },
   { import = "astrocommunity.motion.harpoon" },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
+  { import = "astrocommunity.media.image-nvim" },
   -- import/override with your plugins folder
 }
