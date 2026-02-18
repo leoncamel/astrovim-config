@@ -13,7 +13,7 @@ return {
       large_buf = { size = 1024 * 256, lines = 10000 }, -- set global limits for large files for disabling features like treesitter
       autopairs = true, -- enable autopairs at start
       cmp = true, -- enable completion at start
-      diagnostics_mode = 3, -- diagnostic mode on start (0 = off, 1 = no signs/virtual text, 2 = no virtual text, 3 = on)
+      diagnostics = { virtual_text = true, virtual_lines = false }, -- v5 diagnostics format
       highlighturl = true, -- highlight URLs at start
       notifications = false, -- enable notifications at start
     },
@@ -59,8 +59,8 @@ return {
         },
 
         ["<Leader>fG"] = {
-          function() require("telescope").extensions.live_grep_args.live_grep_args() end,
-          desc = "Find word by grep_args",
+          function() require("snacks").picker.grep() end,
+          desc = "Find word by grep",
         },
 
         -- tables with just a `desc` key will be registered with which-key if it's installed
