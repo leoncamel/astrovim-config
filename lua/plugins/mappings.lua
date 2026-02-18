@@ -8,7 +8,7 @@ return {
       --
       mappings = {
         n = {
-          ["<Leader>bb"] = { "<cmd>Telescope buffers<cr>", desc = "List Buffers" },
+          ["<Leader>bb"] = { function() require("snacks").picker.buffers() end, desc = "List Buffers" },
         },
       },
     },
