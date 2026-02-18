@@ -13,11 +13,10 @@ return {
   -- { import = "astrocommunity.pack.java" },
   -- { import = "astrocommunity.pack.scala" },
   -- { import = "astrocommunity.pack.proto" },
-  { import = "astrocommunity.pack.mdx" },
-
   -- frontend tools
   { import = "astrocommunity.pack.html-css" },
   { import = "astrocommunity.pack.typescript" },
+  { import = "astrocommunity.pack.mdx" },
 
   -- devops tools
   -- { import = "astrocommunity.pack.json" },
@@ -29,14 +28,10 @@ return {
   { import = "astrocommunity.pack.nix" },
   -- { import = "astrocommunity.pack.terraform" },
 
-  { import = "astrocommunity.recipes.telescope-nvchad-theme" },
   { import = "astrocommunity.colorscheme.catppuccin" },
-  { import = "astrocommunity.file-explorer.telescope-file-browser-nvim" },
   { import = "astrocommunity.terminal-integration.toggleterm-manager-nvim" },
-  -- { import = "astrocommunity.keybinding.nvcheatsheet-nvim" },
-  { import = "astrocommunity.utility.telescope-live-grep-args-nvim" },
   { import = "astrocommunity.motion.harpoon" },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
-  -- { import = "astrocommunity.media.image-nvim" },
+  { import = "astrocommunity.markdown-and-latex.markview-nvim" },
   -- import/override with your plugins folder
 }
