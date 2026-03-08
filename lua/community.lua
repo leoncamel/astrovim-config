@@ -9,7 +9,7 @@ return {
   -- programming languages
   { import = "astrocommunity.pack.go" },
   { import = "astrocommunity.pack.lua" },
-  { import = "astrocommunity.pack.python-ruff" },
+  { import = "astrocommunity.pack.python" },
   -- { import = "astrocommunity.pack.java" },
   -- { import = "astrocommunity.pack.scala" },
   -- { import = "astrocommunity.pack.proto" },
