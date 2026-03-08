@@ -33,7 +33,7 @@ return {
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.file-explorer.telescope-file-browser-nvim" },
   { import = "astrocommunity.terminal-integration.toggleterm-manager-nvim" },
-  { import = "astrocommunity.keybinding.nvcheatsheet-nvim" },
+  -- { import = "astrocommunity.keybinding.nvcheatsheet-nvim" },
   { import = "astrocommunity.utility.telescope-live-grep-args-nvim" },
   { import = "astrocommunity.motion.harpoon" },
   { import = "astrocommunity.diagnostics.trouble-nvim" },

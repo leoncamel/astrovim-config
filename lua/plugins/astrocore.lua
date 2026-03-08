@@ -63,11 +63,6 @@ return {
           desc = "Find word by grep_args",
         },
 
-        ["<Leader>H"] = {
-          function() require("nvcheatsheet").toggle() end,
-          desc = "Cheatsheet",
-        },
-
         -- tables with just a `desc` key will be registered with which-key if it's installed
         -- this is useful for naming menus
         -- ["<Leader>b"] = { desc = "Buffers" },
