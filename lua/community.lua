@@ -10,9 +10,10 @@ return {
   { import = "astrocommunity.pack.go" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.python" },
-  -- { import = "astrocommunity.pack.java" },
+  { import = "astrocommunity.pack.java" },
   -- { import = "astrocommunity.pack.scala" },
-  -- { import = "astrocommunity.pack.proto" },
+  { import = "astrocommunity.pack.proto" },
+
   -- frontend tools
   { import = "astrocommunity.pack.html-css" },
   { import = "astrocommunity.pack.typescript" },
