@@ -17,11 +17,11 @@ return {
       -- Set a formatter
       null_ls.builtins.formatting.stylua,
       null_ls.builtins.formatting.prettier,
-      null_ls.builtins.formatting.gofumpt,
-      null_ls.builtins.formatting.yamlfmt,
-      null_ls.builtins.formatting.opentofu_fmt,
-      null_ls.builtins.diagnostics.golangci_lint,
-      null_ls.builtins.diagnostics.yamllint,
+      -- null_ls.builtins.formatting.gofumpt,
+      -- null_ls.builtins.formatting.yamlfmt,
+      -- null_ls.builtins.formatting.opentofu_fmt,
+      -- null_ls.builtins.diagnostics.golangci_lint,
+      -- null_ls.builtins.diagnostics.yamllint,
     })
   end,
 }

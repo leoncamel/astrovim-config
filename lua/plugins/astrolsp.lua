@@ -21,9 +21,9 @@ return {
         enabled = true, -- enable or disable format on save globally
         allow_filetypes = { -- enable format on save for specified filetypes only
           "lua",
-          "go",
-          "yaml",
-          "tf",
+          -- "go",
+          -- "yaml",
+          -- "tf",
         },
         ignore_filetypes = { -- disable format on save for specified filetypes
           -- "python",
@@ -42,11 +42,12 @@ return {
     servers = {
       -- "pyright"
     },
-    -- customize language server configuration options passed to `lspconfig`
+    -- customize language server configuration passed to `vim.lsp.config`
+    -- client specific configuration can also go in `lsp/` in your configuration root (see `:h lsp-config`)
     ---@diagnostic disable: missing-fields
     config = {
       -- clangd = { capabilities = { offsetEncoding = "utf-8" } },
-      gopls = { gofumpt = true },
+      gopls = { settings = { gopls = { gofumpt = true } } },
     },
     -- customize how language servers are attached
     handlers = {
@@ -54,6 +55,7 @@ return {
       -- function(server, opts) require("lspconfig")[server].setup(opts) end
 
       -- the key is the server that is being setup with `lspconfig`
+      stylua = false, -- keep StyLua as a formatter; Mason's stylua package does not support `stylua --lsp`
       -- rust_analyzer = false, -- setting a handler to false will disable the set up of that language server
       -- pyright = function(_, opts) require("lspconfig").pyright.setup(opts) end -- or a custom handler function can be passed
     },
@@ -70,7 +72,7 @@ return {
         -- list of auto commands to set
         {
           -- events to trigger
-          event = { "InsertLeave", "BufEnter" },
+          event = { "TextChanged", "InsertLeave", "BufEnter" },
           -- the rest of the autocmd options (:h nvim_create_autocmd)
           desc = "Refresh codelens (buffer)",
           callback = function(args)
@@ -92,13 +94,13 @@ return {
           function() require("astrolsp.toggles").buffer_semantic_tokens() end,
           desc = "Toggle LSP semantic highlight (buffer)",
           cond = function(client)
-            return client.supports_method "textDocument/semanticTokens/full" and vim.lsp.semantic_tokens ~= nil
+            return client:supports_method "textDocument/semanticTokens/full" and vim.lsp.semantic_tokens ~= nil
           end,
         },
       },
     },
     -- A custom `on_attach` function to be run after the default `on_attach` function
-    -- takes two parameters `client` and `bufnr`  (`:h lspconfig-setup`)
+    -- takes two parameters `client` and `bufnr`  (`:h lsp-attach`)
     on_attach = function(client, bufnr)
       -- this would disable semanticTokensProvider for all clients
       -- client.server_capabilities.semanticTokensProvider = nil

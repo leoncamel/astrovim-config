@@ -1,9 +1,9 @@
 ---@type LazySpec
 return {
-  "javiorfo/nvim-soil",
+  "https://codeberg.org/caskstrength/nvim-soil",
 
   -- Optional for puml syntax highlighting:
-  dependencies = { "javiorfo/nvim-nyctophilia" },
+  dependencies = { "https://codeberg.org/caskstrength/nvim-nyctophilia" },
 
   lazy = true,
   ft = "plantuml",

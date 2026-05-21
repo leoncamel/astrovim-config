@@ -9,13 +9,14 @@ return {
       ensure_installed = {
         -- install language servers
         "lua-language-server",
-        "gopls",
+        -- "gopls",
 
         -- install formatters
         "stylua",
+        "prettier",
 
         -- install debuggers
-        "debugpy",
+        -- "debugpy",
       },
     },
   },
